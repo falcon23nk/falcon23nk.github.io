@@ -5,83 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GREEN SEA - Belleza & Mundo Marino</title>
     <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">GREEN SEA</div>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">🌿 GREEN <span>SEA</span></div>
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#inicio" class="active">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#cosmeticos">Cosméticos</a></li>
                 <li><a href="#marino">Mundo Marino</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span><span></span><span></span>
+            </div>
         </nav>
     </header>
 
+    <!-- ===== HERO SECTION ===== -->
     <section id="inicio" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
+        <div class="overlay"></div>
+        <div class="hero-content container">
             <h1>Sumérgete en el azul del océano</h1>
-            <p>Cosméticos ecológicos y productos marinos de calidad.</p>
-            <a href="#productos" class="cta-button">Ver productos destacados</a>
+            <p>Cosméticos ecológicos y productos marinos para cuidar de ti y del planeta.</p>
+            <a href="#productos" class="btn-primary">Ver productos destacados</a>
         </div>
     </section>
 
-    <section id="productos" class="section productos-seccion">
-        <h2>Productos destacados</h2>
-        <div class="grid-productos">
-            <!-- Uso de productos de ejemplo -->
-            <div class="producto-card">
-                <img src="aquario pez.png" alt="Acuario Fluval Flex">
-                <h3>Acuario Fluval Flex</h3>
-                <p class="precio">319,99 €</p>
-                <button class="boton-compra">Ver / Comprar</button>
-            </div>
-            <div class="producto-card">
-                <img src="kit aquario.png" alt="Set Acuario Advance">
-                <h3>Set Acuario Advance</h3>
-                <p class="precio">90,99 €</p>
-                <button class="boton-compra">Ver / Comprar</button>
-            </div>
-            <div class="producto-card">
-                <img src="led.png" alt="led 60 pro">
-                <h3>Set led 60 advanced</h3>
-                <p class="precio">22,99 €</p>
-                <button class="boton-compra">Ver / Comprar</button>
-            </div>
-            <div class="producto-card">
-                <img src="https://via.placeholder.com/300x200.png?text=Sustrato+Fluval+Stratum" alt="Fluval Stratum">
-                <h3>**:contentReference[oaicite:4]{index=4}**</h3>
-                <p class="precio">25,39 €</p>
-                <button class="boton-compra">Ver / Comprar</button>
-            </div>
-            <div class="producto-card">
-                <img src="https://via.placeholder.com/300x200.png?text=Tropica+Aquarium+Soil" alt="Tropica Aquarium Soil">
-                <h3>**:contentReference[oaicite:5]{index=5}**</h3>
-                <p class="precio">15,99 €</p>
-                <button class="boton-compra">Ver / Comprar</button>
-            </div>
-            <div class="producto-card">
-                <img src="https://via.placeholder.com/300x200.png?text=Acuario+Juwel+Primo+60" alt="Acuario Juwel Primo 60 LED">
-                <h3>**:contentReference[oaicite:6]{index=6}**</h3>
-                <p class="precio">106,99 €</p>
-                <button class="boton-compra">Ver / Comprar</button>
+    <!-- ===== PRODUCTOS ===== -->
+    <section id="productos" class="section productos">
+        <div class="container">
+            <h2>Productos destacados</h2>
+            <p class="section-subtitle">Explora nuestra selección de artículos ecológicos del mundo marino.</p>
+
+            <div class="grid-productos">
+                <div class="producto-card">
+                    <img src="aquario pez.png" alt="Acuario Fluval Flex">
+                    <h3>Acuario Fluval Flex</h3>
+                    <p class="precio">319,99 €</p>
+                    <button class="boton-compra">Ver / Comprar</button>
+                </div>
+
+                <div class="producto-card">
+                    <img src="kit aquario.png" alt="Set Acuario Advance">
+                    <h3>Set Acuario Advance</h3>
+                    <p class="precio">90,99 €</p>
+                    <button class="boton-compra">Ver / Comprar</button>
+                </div>
+
+                <div class="producto-card">
+                    <img src="led.png" alt="Set led 60 advanced">
+                    <h3>Set LED 60 Advanced</h3>
+                    <p class="precio">22,99 €</p>
+                    <button class="boton-compra">Ver / Comprar</button>
+                </div>
+
+                <div class="producto-card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Sustrato+Fluval+Stratum" alt="Fluval Stratum">
+                    <h3>Fluval Stratum</h3>
+                    <p class="precio">25,39 €</p>
+                    <button class="boton-compra">Ver / Comprar</button>
+                </div>
+
+                <div class="producto-card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Tropica+Aquarium+Soil" alt="Tropica Aquarium Soil">
+                    <h3>Tropica Aquarium Soil</h3>
+                    <p class="precio">15,99 €</p>
+                    <button class="boton-compra">Ver / Comprar</button>
+                </div>
+
+                <div class="producto-card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Acuario+Juwel+Primo+60" alt="Acuario Juwel Primo 60 LED">
+                    <h3>Acuario Juwel Primo 60 LED</h3>
+                    <p class="precio">106,99 €</p>
+                    <button class="boton-compra">Ver / Comprar</button>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ===== CONTACTO ===== -->
     <section id="contacto" class="section contacto">
-        <h2>Contáctanos</h2>
-        <p>¿Tienes dudas o quieres realizar un pedido especial? Escríbenos.</p>
-        <p>Email: contacto@greensea.com</p>
-        <p>Instagram: @greensea</p>
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p class="section-subtitle">¿Tienes dudas o quieres realizar un pedido especial? Escríbenos.</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> contacto@greensea.com</p>
+                <p><strong>Instagram:</strong> @greensea</p>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 GREEN SEA. Todos los derechos reservados.</p>
-    </footer>
+    <!-- ===== FOOTER ===== -->
+   <!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container grid-footer">
+
+            <!-- LOGO & DESCRIPCIÓN -->
+            <div class="footer-info">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Logo Green Sea" class="footer-logo">
+                <p>
+                    <strong>GREEN SEA</strong> es una tienda comprometida con la belleza natural y el mundo marino. 
+                    Ofrecemos productos ecológicos y sostenibles, inspirados en la pureza del océano.
+                </p>
+            </div>
+
+            <!-- ENLACES RÁPIDOS -->
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#cosmeticos">Cosméticos</a></li>
+                    <li><a href="#marino">Mundo Marino</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- COLABORACIONES -->
+            <div class="footer-colaboraciones">
+                <h3>Colaboraciones</h3>
+                <div class="colab-logos">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/WWF_logo.svg" alt="WWF">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Greenpeace_logo.svg" alt="Greenpeace">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Ocean_Conservancy_logo.svg" alt="Ocean Conservancy">
+                </div>
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="footer-newsletter">
+                <h3>Suscríbete</h3>
+                <p>Recibe novedades y descuentos exclusivos de nuestros productos ecológicos.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="social-icons">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="Twitter"></a>
+            </div>
+
+            <div class="footer-menu">
+                <details>
+                    <summary>Más información</summary>
+                    <ul>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </details>
+            </div>
+
+            <p class="copy">&copy; 2025 GREEN SEA. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- ===== SCRIPT MENU RESPONSIVE ===== -->
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
