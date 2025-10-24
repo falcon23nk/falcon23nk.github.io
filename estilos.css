@@ -453,6 +453,49 @@ body {
     color: var(--color-secundario);
     margin-bottom: 0.5rem;
 }
+.footer-politicas {
+  background: transparent; /* sin fondo aparte */
+  padding: 1rem 0;
+  text-align: left;
+  color: #ffffff;
+}
+
+.footer-politicas h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+
+.footer-politicas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.footer-politicas ul li {
+  margin: 0.3rem 0;
+}
+
+.footer-politicas ul li a {
+  color: #bfeee6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-politicas ul li a:hover {
+  color: #5fffe2;
+  text-decoration: underline;
+}
+
+.texto-legal {
+  font-size: 0.9rem;
+  color: #d9f9f4;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  max-width: 400px;
+}
 
 /* ===========================================================
    RESPONSIVE
